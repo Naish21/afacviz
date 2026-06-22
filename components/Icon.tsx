@@ -3,13 +3,13 @@ import {
   ArrowRightIcon,
   ArrowUpCircleIcon,
   Bars2Icon,
-  CodeBracketIcon,
-  FilmIcon,
+  NewspaperIcon,
+  PuzzlePieceIcon,
   HomeIcon,
-  InboxStackIcon,
-  MicrophoneIcon,
+  DocumentTextIcon,
+  CalendarDaysIcon,
   TagIcon,
-  WrenchScrewdriverIcon,
+  UserGroupIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
@@ -21,17 +21,17 @@ export const Icon = ({
   className?: string
 }) => {
   const icons: { [key: string]: any } = {
-    blog: CodeBracketIcon,
+    blog: NewspaperIcon,
     burger: Bars2Icon,
     close: XMarkIcon,
     home: HomeIcon,
-    inspiration: FilmIcon,
+    inspiration: PuzzlePieceIcon,
     next: ArrowRightIcon,
-    podcasts: MicrophoneIcon,
+    podcasts: CalendarDaysIcon,
     prev: ArrowLeftIcon,
-    resources: InboxStackIcon,
+    resources: DocumentTextIcon,
     tag: TagIcon,
-    tools: WrenchScrewdriverIcon,
+    tools: UserGroupIcon,
     up: ArrowUpCircleIcon,
   }
 

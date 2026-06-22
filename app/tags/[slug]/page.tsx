@@ -121,7 +121,7 @@ export default function TagPage({ params }: { params: { slug: string } }) {
                         {post.description}
                       </p>
                       <span className="mt-auto pt-4 text-slate-500 dark:text-slate-400 text-sm font-bold">
-                        Read more &rarr;
+                        Leer más &rarr;
                       </span>
                     </div>
                   </Link>

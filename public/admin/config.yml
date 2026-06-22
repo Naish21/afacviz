@@ -1,239 +1,167 @@
+# ===========================================================================
+#  Panel de administración del AFAC (Decap CMS)
+#  Accede en:  https://afacviz.com/admin/
+# ===========================================================================
+#
+#  AUTENTICACIÓN (cómo se inicia sesión para editar la web)
+#  ---------------------------------------------------------------------------
+#  Por defecto se usa "git-gateway" + Netlify Identity. OJO: Netlify Identity
+#  y Git Gateway están DEPRECADOS y es posible que en un sitio nuevo no puedas
+#  activarlos. Si es tu caso, usa DecapBridge (gratuito) descomentando el
+#  bloque de más abajo. Tienes el paso a paso en SETUP-AMPA.md.
+# ---------------------------------------------------------------------------
+
+# --- OPCIÓN A: Netlify Identity + Git Gateway (legado) ---
 backend:
   name: git-gateway
   branch: main
 
+# --- OPCIÓN B: DecapBridge (recomendado si no puedes usar Identity) ---
+# Regístrate gratis en https://decapbridge.com, conecta este repositorio y
+# pega los valores que te dé. Luego comenta el bloque de la OPCIÓN A y
+# descomenta este:
+#
+# backend:
+#   name: git-gateway
+#   repo: Naish21/afacviz
+#   branch: main
+#   identity_url: https://auth.decapbridge.com/sites/TU-SITE-ID
+#   gateway_url: https://gateway.decapbridge.com
+
+# Para probar en tu ordenador en local: descomenta y ejecuta `npx decap-server`.
 # local_backend: true
 
+# Flujo borrador -> revisión -> publicado (si varias personas editan):
 # publish_mode: editorial_workflow
+
+locale: 'es'
 
 editor:
   preview: false
 
-display_url: https://design-code.tips # This url will display in the top-right of the CMS
-media_folder: 'public/media' # Media files will be stored in the repo under static/media
-public_folder: '/media' # The src attribute for uploaded media will begin with /media
+display_url: https://afacviz.com
+media_folder: 'public/media'
+public_folder: '/media'
+
 collections:
+  # ------------------------- PÁGINAS FIJAS -------------------------
   - name: 'page'
-    label: 'Pages'
+    label: 'Páginas'
     files:
       - file: 'content/page/home.md'
-        label: 'Home'
+        label: 'Inicio'
         name: 'home'
         fields:
-          - label: 'Title'
-            name: 'title'
-            widget: string
+          - { label: 'Título', name: 'title', widget: string }
+          - { label: 'Descripción', name: 'description', widget: 'text' }
 
       - file: 'content/page/about.md'
-        label: 'About'
+        label: 'Sobre el AFAC'
         name: 'about'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - {
-              label: 'Description',
-              name: 'description',
-              widget: 'markdown',
-              sanitize_preview: true,
-              buttons: ['bold', 'italic', 'link'],
-              modes: ['rich_text'],
-              editor_components: [''],
-            }
+          - { label: 'Título', name: 'title', widget: 'string' }
+          - { label: 'Contenido', name: 'description', widget: 'markdown', sanitize_preview: true }
 
       - file: 'content/page/contact.md'
-        label: 'Contact'
+        label: 'Contacto'
         name: 'contact'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'description', widget: 'text' }
+          - { label: 'Título', name: 'title', widget: 'string' }
+          - { label: 'Contenido', name: 'description', widget: 'text' }
 
-  - name: 'blog' # Used in routes, e.g., /admin/collections/blog
-    label: 'Code Blog' # Used in the UI
-    folder: 'content/blog' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{day}}-{{title}}' # Filename template, e.g., 2024-090-25-name-of-doc.md
-    view_groups:
-      - label: Year
-        field: date
-        pattern: \d{4}
-    fields: # The fields for each document, usually in front matter
-      - {
-          label: 'Template Key', # This field is used to "group" the posts by category
-          name: 'templateKey',
-          widget: 'hidden', # It should be an `hidden` field
-          default: 'blog',
-        }
-      - { label: 'Title', name: 'title', widget: string }
-      - { label: 'Featured', name: 'featured', widget: boolean, default: false }
-      - {
-          label: 'Body',
-          name: 'body',
-          widget: 'markdown',
-          sanitize_preview: true,
-          # buttons: ['bold', 'italic', 'link'],
-          # modes: ['rich_text'],
-          # editor_components: [''],
-        }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-
-  - name: 'inspiration'
-    label: 'Inspiration'
-    folder: 'content/inspiration'
+  # ------------------------- NOTICIAS -------------------------
+  - name: 'blog'
+    label: 'Noticias'
+    label_singular: 'Noticia'
+    folder: 'content/blog'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{title}}'
-    extension: mdx
-    format: frontmatter
     view_groups:
-      - label: Year
+      - label: Año
         field: date
         pattern: \d{4}
     fields:
-      - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'inspiration',
-        }
-      - { label: 'Title', name: 'title', widget: string }
-      - { label: 'Featured', name: 'featured', widget: boolean, default: false }
-      - {
-          label: 'Featured Image',
-          name: 'image',
-          widget: 'image',
-          choose_url: false,
-        }
-      - {
-          label: 'Body',
-          name: 'body',
-          widget: 'markdown',
-          sanitize_preview: true,
-          minimal: true,
-        }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Tipo', name: 'templateKey', widget: 'hidden', default: 'blog' }
+      - { label: 'Título', name: 'title', widget: string }
+      - { label: 'Destacada en portada', name: 'featured', widget: boolean, default: false }
+      - { label: 'Resumen', name: 'description', widget: 'text', required: false }
+      - { label: 'Cuerpo', name: 'body', widget: 'markdown', sanitize_preview: true }
+      - { label: 'Etiquetas', name: 'tags', widget: 'list' }
+      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime' }
 
+  # ------------------------- ACTIVIDADES -------------------------
+  - name: 'inspiration'
+    label: 'Actividades'
+    label_singular: 'Actividad'
+    folder: 'content/inspiration'
+    create: true
+    slug: '{{title}}'
+    extension: mdx
+    format: frontmatter
+    fields:
+      - { label: 'Tipo', name: 'templateKey', widget: 'hidden', default: 'inspiration' }
+      - { label: 'Título', name: 'title', widget: string }
+      - { label: 'Destacada en portada', name: 'featured', widget: boolean, default: true }
+      - { label: 'Resumen', name: 'description', widget: 'text', required: false }
+      - { label: 'Imagen', name: 'image', widget: 'image', choose_url: false }
+      - { label: 'Descripción', name: 'body', widget: 'markdown', sanitize_preview: true, minimal: true }
+      - { label: 'Etiquetas', name: 'tags', widget: 'list' }
+      - { label: 'Fecha', name: 'date', widget: 'datetime' }
+
+  # ------------------------- EVENTOS -------------------------
   - name: 'podcasts'
-    label: 'Podcasts'
-    label_singular: 'Podcast'
+    label: 'Eventos'
+    label_singular: 'Evento'
     folder: 'content/podcasts'
     create: true
     slug: '{{title}}'
     view_groups:
-      - label: Year
+      - label: Año
         field: date
         pattern: \d{4}
     fields:
-      - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'podcasts',
-        }
-      - { label: 'Title', name: 'title', widget: string }
-      - { label: 'Featured', name: 'featured', widget: boolean, default: false }
-      - { label: 'Link', name: 'link', widget: string }
-      - {
-          label: 'Featured Image',
-          name: 'image',
-          widget: 'image',
-          choose_url: false,
-        }
-      - {
-          label: 'Body',
-          name: 'body',
-          widget: 'markdown',
-          sanitize_preview: true,
-          minimal: true,
-        }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Tipo', name: 'templateKey', widget: 'hidden', default: 'podcasts' }
+      - { label: 'Título', name: 'title', widget: string }
+      - { label: 'Destacado en portada', name: 'featured', widget: boolean, default: true }
+      - { label: 'Resumen', name: 'description', widget: 'text', required: false }
+      - { label: 'Enlace (inscripción/info)', name: 'link', widget: string, required: false, default: '#' }
+      - { label: 'Imagen', name: 'image', widget: 'image', choose_url: false }
+      - { label: 'Detalles', name: 'body', widget: 'markdown', sanitize_preview: true, minimal: true }
+      - { label: 'Etiquetas', name: 'tags', widget: 'list' }
+      - { label: 'Fecha del evento', name: 'date', widget: 'datetime' }
 
+  # ------------------------- SERVICIOS -------------------------
   - name: 'tools'
-    label: 'Tools'
-    label_singular: 'Tool'
+    label: 'Servicios'
+    label_singular: 'Servicio'
     folder: 'content/tools'
     create: true
     slug: '{{title}}'
-    view_groups:
-      - label: Year
-        field: date
-        pattern: \d{4}
     fields:
-      - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'tools',
-        }
-      - { label: 'Title', name: 'title', widget: string }
-      - { label: 'Featured', name: 'featured', widget: boolean, default: false }
-      - {
-          label: 'App Icon Image',
-          name: 'image',
-          widget: 'image',
-          choose_url: false,
-        }
-      - { label: 'Link', name: 'link', widget: string }
-      - {
-          label: 'Body',
-          name: 'body',
-          widget: 'markdown',
-          sanitize_preview: true,
-          minimal: true,
-        }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Tipo', name: 'templateKey', widget: 'hidden', default: 'tools' }
+      - { label: 'Título', name: 'title', widget: string }
+      - { label: 'Destacado en portada', name: 'featured', widget: boolean, default: true }
+      - { label: 'Resumen', name: 'description', widget: 'text', required: false }
+      - { label: 'Imagen', name: 'image', widget: 'image', choose_url: false }
+      - { label: 'Enlace (más info/inscripción)', name: 'link', widget: string, required: false, default: '#' }
+      - { label: 'Descripción', name: 'body', widget: 'markdown', sanitize_preview: true, minimal: true }
+      - { label: 'Etiquetas', name: 'tags', widget: 'list' }
+      - { label: 'Fecha', name: 'date', widget: 'datetime' }
 
+  # ------------------------- DOCUMENTOS -------------------------
   - name: 'resources'
-    label: 'Resources'
-    label_singular: 'Resource'
+    label: 'Documentos'
+    label_singular: 'Documento'
     folder: 'content/resources'
     create: true
     slug: '{{title}}'
-    view_groups:
-      - label: Year
-        field: date
-        pattern: \d{4}
     fields:
-      - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'resources',
-        }
-      - { label: 'Title', name: 'title', widget: string }
-      - { label: 'Featured', name: 'featured', widget: boolean, default: false }
-      - { label: 'Image', name: 'image', widget: 'image', choose_url: false }
-      - { label: 'Link', name: 'link', widget: string }
-      - {
-          label: 'Body',
-          name: 'body',
-          widget: 'markdown',
-          sanitize_preview: true,
-          minimal: true,
-        }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-
-  # - name: 'authors'
-  #   label: 'Authors'
-  #   folder: 'content/authors'
-  #   create: true
-  #   slug: '{{name}}'
-  #   fields:
-  #     - { label: 'Name', name: 'name', widget: 'string', required: true }
-  #     - {
-  #         label: 'About',
-  #         name: 'description',
-  #         widget: 'markdown',
-  #         sanitize_preview: true,
-  #         buttons: ['bold', 'italic', 'link', 'heading-two', 'heading-three'],
-  #         modes: ['rich_text'],
-  #         editor_components: [''],
-  #       }
-  #     - {
-  #         label: 'Featured Image',
-  #         name: 'image',
-  #         widget: 'image',
-  #         choose_url: false,
-  #       }
+      - { label: 'Tipo', name: 'templateKey', widget: 'hidden', default: 'resources' }
+      - { label: 'Título', name: 'title', widget: string }
+      - { label: 'Destacado en portada', name: 'featured', widget: boolean, default: false }
+      - { label: 'Resumen', name: 'description', widget: 'text', required: false }
+      - { label: 'Imagen', name: 'image', widget: 'image', choose_url: false }
+      - { label: 'Archivo o enlace (PDF)', name: 'link', widget: 'file', required: false, default: '#' }
+      - { label: 'Descripción', name: 'body', widget: 'markdown', sanitize_preview: true, minimal: true }
+      - { label: 'Etiquetas', name: 'tags', widget: 'list' }
+      - { label: 'Fecha', name: 'date', widget: 'datetime' }

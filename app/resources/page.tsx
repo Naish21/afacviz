@@ -57,7 +57,7 @@ export default function Resources() {
     <Layout>
       <section className="max-w-2xl m-auto flex flex-col gap-6 px-4 sm:px-12 mb-32">
         <CategoryHeader
-          title="Resources"
+          title="Documentos y circulares"
           templateKey={resources[0].templateKey!}
         />
 

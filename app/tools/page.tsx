@@ -53,7 +53,7 @@ export default function Tools() {
   return (
     <Layout>
       <section className="max-w-3xl m-auto flex flex-col gap-6 px-4 sm:px-12 mb-32">
-        <CategoryHeader title="Tools" templateKey={tools[0].templateKey!} />
+        <CategoryHeader title="Servicios a las familias" templateKey={tools[0].templateKey!} />
 
         <div className="flex flex-wrap gap-4 w-full">
           {tools.map((post) => {

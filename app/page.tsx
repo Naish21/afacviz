@@ -100,9 +100,9 @@ export default function Home() {
           <div className="flex justify-between items-end mb-4">
             <h2 className="text-2xl sm:text-3xl font-bold flex items-center gap-3">
               <Icon name="blog" className="size-6 sm:size-8 opacity-60" />
-              <span>Code Blog</span>
+              <span>Noticias</span>
             </h2>
-            <Link href="/blog">View all &rarr;</Link>
+            <Link href="/blog">Ver todo &rarr;</Link>
           </div>
           <div className="grid xl:grid-cols-2 gap-4 flex-wrap">
             {blogs.map((post) => (
@@ -118,9 +118,9 @@ export default function Home() {
                 name="inspiration"
                 className="size-6 sm:size-8 opacity-60"
               />
-              <span>Inspiration</span>
+              <span>Actividades</span>
             </h2>
-            <Link href="/inspiration">View all &rarr;</Link>
+            <Link href="/inspiration">Ver todo &rarr;</Link>
           </div>
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 flex-wrap">
             {inspirations.map((post) => (
@@ -133,9 +133,9 @@ export default function Home() {
           <div className="flex justify-between items-end mb-4">
             <h2 className="text-2xl sm:text-3xl font-bold flex items-center gap-3">
               <Icon name="podcasts" className="size-6 sm:size-8 opacity-60" />
-              <span>Podcasts</span>
+              <span>Eventos</span>
             </h2>
-            <Link href="/podcasts">View all &rarr;</Link>
+            <Link href="/podcasts">Ver todo &rarr;</Link>
           </div>
           <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 flex-wrap">
             {podcasts.map((post) => (
@@ -148,9 +148,9 @@ export default function Home() {
           <div className="flex justify-between items-end mb-4">
             <h2 className="text-2xl sm:text-3xl font-bold flex items-center gap-3">
               <Icon name="tools" className="size-6 sm:size-8 opacity-60" />
-              <span>Tools</span>
+              <span>Servicios</span>
             </h2>
-            <Link href="/tools">View all &rarr;</Link>
+            <Link href="/tools">Ver todo &rarr;</Link>
           </div>
           <div className="grid xl:grid-cols-2 gap-4 flex-wrap">
             {tools.map((post) => (

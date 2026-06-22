@@ -1,6 +1,6 @@
 ---
 slug: home
-title: Learn design, coding, web tools, and get inspired!
+title: Bienvenidas y bienvenidos al AFAC, la asociación de familias de nuestro cole
 description: >-
-  Discover the best tools and ideas to improve your design and web skills. Find useful resources to learn design, coding, and web tools, and get inspired.
+  Somos la Asociación de Familias del Alumnado (AFAC) del CEIP [Nombre del Colegio]. Organizamos actividades extraescolares, servicios para conciliar, fiestas y eventos, y representamos a las familias ante el centro. ¡Hazte socio y participa!
 ---

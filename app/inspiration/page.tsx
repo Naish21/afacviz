@@ -54,7 +54,7 @@ export default function InspirationPage() {
     <Layout>
       <section className="md:max-w-[87%] m-auto flex flex-col gap-6 px-4 sm:px-12 mb-32">
         <CategoryHeader
-          title="Inspiration"
+          title="Actividades extraescolares"
           templateKey={inspirations[0].templateKey!}
         />
 

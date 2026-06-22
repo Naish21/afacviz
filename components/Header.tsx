@@ -17,7 +17,7 @@ export default function Header() {
           href="/"
           className="font-bold opacity-80 hover:opacity-100 transition-opacity rounded outline-offset-8 pointer-events-auto"
         >
-          dc.tips
+          AFAC
         </Link>
 
         <div className="absolute right-0 top-4 sm:top-5 group pointer-events-auto">
@@ -47,7 +47,7 @@ export default function Header() {
                   className={menuItemClasses}
                 >
                   <Icon name="home" className={iconClasses} />
-                  Home
+                  Inicio
                 </Link>
               </li>
               <li>
@@ -57,7 +57,7 @@ export default function Header() {
                   className={menuItemClasses}
                 >
                   <Icon name="blog" className={iconClasses} />
-                  Code Blog
+                  Noticias
                 </Link>
               </li>
               <li>
@@ -67,7 +67,7 @@ export default function Header() {
                   className={menuItemClasses}
                 >
                   <Icon name="tag" className={iconClasses} />
-                  All Tags
+                  Etiquetas
                 </Link>
               </li>
               <li>
@@ -77,7 +77,7 @@ export default function Header() {
                   className={menuItemClasses}
                 >
                   <Icon name="inspiration" className={iconClasses} />
-                  Inspiration
+                  Actividades
                 </Link>
               </li>
               <li>
@@ -87,7 +87,7 @@ export default function Header() {
                   className={menuItemClasses}
                 >
                   <Icon name="podcasts" className={iconClasses} />
-                  Podcasts
+                  Eventos
                 </Link>
               </li>
               <li>
@@ -97,7 +97,7 @@ export default function Header() {
                   className={menuItemClasses}
                 >
                   <Icon name="tools" className={iconClasses} />
-                  Tools
+                  Servicios
                 </Link>
               </li>
               <li>
@@ -107,7 +107,7 @@ export default function Header() {
                   className={menuItemClasses}
                 >
                   <Icon name="resources" className={iconClasses} />
-                  Resources
+                  Documentos
                 </Link>
               </li>
             </menu>

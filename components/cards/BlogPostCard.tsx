@@ -18,7 +18,7 @@ export default function BlogPostCard({ post }: { post: Blog }) {
         </p>
       )}
       <span className="mt-auto text-slate-500 text-sm font-bold">
-        Read more &rarr;
+        Leer más &rarr;
       </span>
     </Link>
   )
