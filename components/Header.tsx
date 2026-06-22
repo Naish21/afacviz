@@ -1,119 +1,106 @@
+'use client'
+
 import Link from 'next/link'
 import { useState } from 'react'
 import { Icon } from './Icon'
 
-const menuItemClasses =
-  'w-full flex items-center gap-3 p-3 px-6 text-sm tracking-wide text-slate-700 dark:text-slate-700 hover:text-slate-800 dark:hover:text-slate-950 hover:font-semibold transition-colors transition-all border-b border-b-slate-200 dark:border-b-slate-300 hover:bg-slate-100 dark:hover:bg-white'
+const NAV = [
+  { href: '/', label: 'Inicio', icon: 'home' },
+  { href: '/blog', label: 'Noticias', icon: 'blog' },
+  { href: '/inspiration', label: 'Actividades', icon: 'inspiration' },
+  { href: '/podcasts', label: 'Eventos', icon: 'podcasts' },
+  { href: '/tools', label: 'Servicios', icon: 'tools' },
+  { href: '/resources', label: 'Documentos', icon: 'resources' },
+]
 
-const iconClasses = 'size-4 opacity-70'
+function Wordmark() {
+  return (
+    <Link
+      href="/"
+      className="flex items-center gap-2.5 shrink-0 group"
+      aria-label="Inicio AFAC"
+    >
+      <span className="relative grid place-items-center size-9 rounded-full bg-brand text-white font-display font-extrabold shadow-[0_4px_10px_rgba(47,122,77,.3)]">
+        <span className="absolute -right-1 -top-1 size-3 rounded-full bg-sun border-2 border-cream" />
+        A
+      </span>
+      <span className="leading-none">
+        <span className="block font-display font-extrabold text-xl text-ink tracking-tight">
+          AFAC
+        </span>
+        <span className="block text-[0.62rem] font-bold uppercase tracking-[0.18em] text-muted">
+          Familias del cole
+        </span>
+      </span>
+    </Link>
+  )
+}
 
 export default function Header() {
-  const [navbar, setNavbar] = useState(false)
+  const [open, setOpen] = useState(false)
 
   return (
-    <header className="flex p-4 sm:p-6 fixed w-full z-10 pointer-events-none">
-      <nav className="flex w-full justify-between items-center">
-        <Link
-          href="/"
-          className="font-bold opacity-80 hover:opacity-100 transition-opacity rounded outline-offset-8 pointer-events-auto"
-        >
-          AFAC
-        </Link>
+    <header className="sticky top-0 z-30 bg-cream/90 backdrop-blur border-b border-line">
+      <nav className="mx-auto max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+        <Wordmark />
 
-        <div className="absolute right-0 top-4 sm:top-5 group pointer-events-auto">
+        {/* Navegación de escritorio */}
+        <ul className="hidden lg:flex items-center gap-7 text-[0.95rem]">
+          {NAV.slice(1).map((item) => (
+            <li key={item.href}>
+              <Link href={item.href} className="nav-link">
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="flex items-center gap-2">
+          <Link href="/resources" className="btn btn-primary hidden sm:inline-flex">
+            Hazte socio/a
+          </Link>
+
+          {/* Botón móvil */}
           <button
-            className="p-2 text-xs uppercase font-bold rounded-lg absolute right-4 sm:right-6 z-10 bg-white text-slate-700 dark:bg-slate-300 shadow-md hover:shadow-lg transition-shadow"
             type="button"
-            onClick={() => setNavbar(!navbar)}
+            onClick={() => setOpen(!open)}
+            aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+            aria-expanded={open}
+            className="lg:hidden grid place-items-center size-10 rounded-full bg-white border border-line text-ink shadow-sm"
           >
-            {navbar ? (
-              <span aria-label="Close menu" className="w-4 block">
-                <Icon name="close" className="size-4" />
-              </span>
-            ) : (
-              <span className="flex gap-2 items-center group text-xs">
-                Menu
-                <Icon name="burger" className="size-4" />
-              </span>
-            )}
+            <Icon name={open ? 'close' : 'burger'} className="size-5" />
           </button>
-
-          <div className={`${navbar ? '' : 'hidden'}`}>
-            <menu className="min-w-48 flex flex-col absolute right-4 sm:right-6 py-3 bg-white dark:bg-slate-100 rounded-xl shadow-md group-hover:shadow-lg transition-shadow">
-              <li>
-                <Link
-                  onClick={() => setNavbar(!navbar)}
-                  href="/"
-                  className={menuItemClasses}
-                >
-                  <Icon name="home" className={iconClasses} />
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => setNavbar(!navbar)}
-                  href="/blog"
-                  className={menuItemClasses}
-                >
-                  <Icon name="blog" className={iconClasses} />
-                  Noticias
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => setNavbar(!navbar)}
-                  href="/tags"
-                  className={menuItemClasses}
-                >
-                  <Icon name="tag" className={iconClasses} />
-                  Etiquetas
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => setNavbar(!navbar)}
-                  href="/inspiration"
-                  className={menuItemClasses}
-                >
-                  <Icon name="inspiration" className={iconClasses} />
-                  Actividades
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => setNavbar(!navbar)}
-                  href="/podcasts"
-                  className={menuItemClasses}
-                >
-                  <Icon name="podcasts" className={iconClasses} />
-                  Eventos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => setNavbar(!navbar)}
-                  href="/tools"
-                  className={menuItemClasses}
-                >
-                  <Icon name="tools" className={iconClasses} />
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => setNavbar(!navbar)}
-                  href="/resources"
-                  className={menuItemClasses}
-                >
-                  <Icon name="resources" className={iconClasses} />
-                  Documentos
-                </Link>
-              </li>
-            </menu>
-          </div>
         </div>
       </nav>
+
+      {/* Panel móvil */}
+      {open && (
+        <div className="lg:hidden border-t border-line bg-cream">
+          <ul className="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex flex-col">
+            {NAV.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="flex items-center gap-3 py-3 font-bold text-ink border-b border-line/70 last:border-0"
+                >
+                  <Icon name={item.icon} className="size-5 text-brand" />
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+            <li className="pt-3">
+              <Link
+                href="/resources"
+                onClick={() => setOpen(false)}
+                className="btn btn-primary w-full justify-center"
+              >
+                Hazte socio/a
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </header>
   )
 }
