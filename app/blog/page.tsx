@@ -10,9 +10,9 @@ import { SITE_NAME, SITE_URL } from '../../config'
 
 export function generateMetadata(): Metadata {
   const SEO = {
-    title: 'Code Blog by Nuno Marques | Design & Development Tips',
+    title: 'Noticias | AFAC',
     description:
-      'Discover the latest blogs on code, web design and development. Stay up to date with the latest trends and technologies, with code examples.',
+      'Toda la actualidad y los avisos del AFAC, la asociación de familias del cole.',
     image: `${SITE_URL}/og-card.png`,
   }
 

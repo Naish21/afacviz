@@ -9,9 +9,9 @@ import { AUTHOR_NAME, SITE_NAME, SITE_URL } from '../../config'
 // Metadata function for SEO
 export function generateMetadata(): Metadata {
   const SEO = {
-    title: `A Selection of Inspiration by ${AUTHOR_NAME} | ${SITE_NAME}`,
+    title: `Actividades | ${SITE_NAME}`,
     description:
-      'Find inspiration through web intros, show reels, and creative showcases, curated for designers and developers.',
+      'Actividades extraescolares del AFAC: deporte, idiomas, música, robótica, teatro y mucho más.',
   }
 
   return {

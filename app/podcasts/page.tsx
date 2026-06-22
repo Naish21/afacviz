@@ -12,9 +12,9 @@ import { AUTHOR_NAME, SITE_NAME, SITE_URL } from '../../config'
 // Metadata function for SEO
 export function generateMetadata(): Metadata {
   const SEO = {
-    title: `A Selection of Podcasts by ${AUTHOR_NAME} | ${SITE_NAME}`,
+    title: `Eventos | ${SITE_NAME}`,
     description:
-      'Listen to a curated selection of podcasts covering web development, design, business, and electronic music. Perfect for creatives and tech enthusiasts.',
+      'Agenda del AFAC: fiestas, salidas y citas importantes del curso escolar.',
   }
 
   return {

@@ -12,9 +12,9 @@ import CategoryHeader from '../../components/CategoryHeader'
 // Metadata function for SEO
 export function generateMetadata(): Metadata {
   const SEO = {
-    title: `A Collection of Resources by ${AUTHOR_NAME} | ${SITE_NAME}`,
+    title: `Documentos | ${SITE_NAME}`,
     description:
-      'Explore a curated collection of resources related with accessibility, ui and ux patterns, and source materials for developers and designers.',
+      'Documentos del AFAC: estatutos, actas, circulares y hojas de inscripción.',
   }
 
   return {
