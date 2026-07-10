@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
   const SEO = {
     title: `Servicios | ${SITE_NAME}`,
     description:
-      'Servicios del AFAC para ayudar a las familias a conciliar: aula matinal, comedor, ludoteca y más.',
+      'Lo que hace el AFA CV por las familias: representación, digitalización racional, formación y acompañamiento.',
   }
 
   return {

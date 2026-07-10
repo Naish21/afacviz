@@ -1,5 +1,20 @@
 ---
 title: Contacto
 description: >-
-  ¿Tienes dudas o quieres colaborar? Escríbenos a afac@[tucolegio].es o pásate por el local del AMPA (junto a la entrada principal) los martes de 9:00 a 10:00 y los jueves de 16:00 a 17:00. También puedes encontrarnos en el grupo de difusión de las familias. Este contenido es de ejemplo: sustituye los datos por los de tu asociación.
+  Estamos aquí para escucharos, apoyaros y trabajar juntos por el bienestar de nuestros hijos e hijas. Si tenéis cualquier duda, sugerencia o propuesta, no dudéis en poneros en contacto con nosotros.
+
+
+  **Correo electrónico:** afacviz@gmail.com
+
+
+  **Teléfono:** 667 804 934
+
+
+  **Dirección:** Calle Juan de Garay 5, bajo · 48003 Bilbao
+
+
+  **Hazte socio/a:** rellena el formulario de inscripción y realiza una transferencia anual de 10 € por familia. Es importante indicar en el ingreso el nombre, apellido y curso del niño o la niña, para que podamos tener constancia.
+
+
+  ¡Animaos! La asociación necesita vuestro apoyo y colaboración para poder funcionar.
 ---

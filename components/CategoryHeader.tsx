@@ -2,11 +2,11 @@ import { Icon } from './Icon'
 import { cat } from './categories'
 
 const SUBTITLES: Record<string, string> = {
-  blog: 'Toda la actualidad y los avisos del AFAC.',
-  inspiration: 'Actividades extraescolares deportivas, culturales y tecnológicas.',
-  podcasts: 'Fiestas, salidas y citas importantes del curso.',
-  tools: 'Servicios del AFAC para ayudaros a conciliar.',
-  resources: 'Circulares, actas y documentos para descargar.',
+  blog: 'Toda la actualidad y los avisos del AFA CV.',
+  inspiration: 'Actividades y propuestas surgidas de las ideas de las familias.',
+  podcasts: 'Charlas, asambleas y citas importantes del curso.',
+  tools: 'Lo que hacemos por las familias del Colegio Vizcaya.',
+  resources: 'Documentos, formularios y material de la asociación.',
 }
 
 export default function CategoryHeader({

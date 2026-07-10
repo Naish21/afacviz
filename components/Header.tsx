@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Icon } from './Icon'
+import { FORM_SOCIOS } from './contacto'
 
 const NAV = [
   { href: '/', label: 'Inicio', icon: 'home' },
@@ -18,7 +19,7 @@ function Wordmark() {
     <Link
       href="/"
       className="flex items-center gap-2.5 shrink-0 group"
-      aria-label="Inicio AFAC"
+      aria-label="Inicio AFA CV"
     >
       <span className="relative grid place-items-center size-9 rounded-full bg-brand text-white font-display font-extrabold shadow-[0_4px_10px_rgba(47,122,77,.3)]">
         <span className="absolute -right-1 -top-1 size-3 rounded-full bg-sun border-2 border-cream" />
@@ -26,10 +27,10 @@ function Wordmark() {
       </span>
       <span className="leading-none">
         <span className="block font-display font-extrabold text-xl text-ink tracking-tight">
-          AFAC
+          AFA CV
         </span>
         <span className="block text-[0.62rem] font-bold uppercase tracking-[0.18em] text-muted">
-          Familias del cole
+          Colegio Vizcaya
         </span>
       </span>
     </Link>
@@ -56,9 +57,14 @@ export default function Header() {
         </ul>
 
         <div className="flex items-center gap-2">
-          <Link href="/resources" className="btn btn-primary hidden sm:inline-flex">
+          <a
+            href={FORM_SOCIOS}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary hidden sm:inline-flex"
+          >
             Hazte socio/a
-          </Link>
+          </a>
 
           {/* Botón móvil */}
           <button
@@ -90,13 +96,14 @@ export default function Header() {
               </li>
             ))}
             <li className="pt-3">
-              <Link
-                href="/resources"
-                onClick={() => setOpen(false)}
+              <a
+                href={FORM_SOCIOS}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-primary w-full justify-center"
               >
                 Hazte socio/a
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

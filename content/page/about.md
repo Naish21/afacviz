@@ -1,28 +1,50 @@
 ---
-title: Sobre el AFAC
+title: Quiénes somos
 description: >-
-  El AFAC (Asociación de Familias del Alumnado del CEIP [Nombre del Colegio]) es una asociación sin ánimo de lucro formada por madres, padres y tutores del alumnado del centro. Nuestro objetivo es colaborar con el colegio y mejorar el día a día de nuestras hijas e hijos.
+  Desde la Junta Directiva de la **Asociación de Familias de Alumnos del Colegio Vizcaya (AFA CV)** queremos daros nuestra más cálida bienvenida. Saludamos especialmente a las familias que se incorporan por primera vez a nuestra comunidad escolar, deseándoles una rápida y feliz adaptación.
+
+
+  El AFA CV es una asociación formada por familias cuyo objetivo principal es **colaborar con el centro** para garantizar la mejor educación, salud y bienestar de nuestros hijos e hijas. Creemos que la educación es una labor compartida entre el colegio y las familias, y que trabajando juntos podemos marcar una diferencia real.
 
 
   ## Qué hacemos
 
 
-  - **Representamos a las familias** ante el equipo directivo y en el Consejo Escolar.
+  ### Representación
 
-  - **Organizamos actividades extraescolares** deportivas, culturales y tecnológicas.
-
-  - **Gestionamos servicios de conciliación** como el aula matinal, la ludoteca de tarde o los campamentos en periodos no lectivos.
-
-  - **Promovemos fiestas y eventos** de convivencia: Navidad, Carnaval, Día del Libro o la fiesta de fin de curso.
-
-  - **Impulsamos proyectos** de igualdad, convivencia, sostenibilidad y solidaridad.
+  Somos el nexo de unión entre las familias y el equipo directivo del colegio. Trasladamos vuestras inquietudes y participamos en los espacios de diálogo del centro.
 
 
-  ## La junta directiva
+  ### Actividades
+
+  Organizamos y gestionamos actividades extraescolares, talleres, fiestas y eventos culturales que enriquecen el aprendizaje y fomentan la unión entre las familias.
 
 
-  La asociación se organiza en una junta directiva (presidencia, secretaría, tesorería y vocalías) y en comisiones de trabajo abiertas a cualquier familia: extraescolares, comunicación, comedor, eventos y solidaridad. La asamblea general de socios es el órgano que aprueba las cuentas y elige a la junta cada curso.
+  ### Mejoras
+
+  Canalizamos recursos y trasladamos sugerencias para mejorar la experiencia en el Colegio Vizcaya.
 
 
-  > Este texto es un contenido de ejemplo. Editadlo desde el panel de administración para adaptarlo a vuestra asociación.
+  ### Formación y acompañamiento
+
+  Organizamos charlas y talleres para las familias, y acompañamos a quien lo necesite en su relación con el centro.
+
+
+  ## Por qué asociarse
+
+
+  Vuestra participación es fundamental. Cuantos más seamos, más ideas podremos aportar y más proyectos podremos llevar a cabo. Asociarse permite:
+
+
+  - **Acceder a descuentos y recursos** movilizados colectivamente desde el AFA CV.
+
+  - **Participar en la toma de decisiones** que afectan a la educación de vuestros hijos e hijas.
+
+  - **Trasladar sugerencias de mejora** en el funcionamiento del colegio y ser escuchados.
+
+
+  La cuota es de **10 € al año por familia**. El AFA CV es un espacio de encuentro y apoyo mutuo, donde cada voz cuenta.
+
+
+  > «Cualquier ayuda innecesaria es un obstáculo para el desarrollo.» — María Montessori
 ---

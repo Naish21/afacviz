@@ -12,7 +12,7 @@ export function generateMetadata(): Metadata {
   const SEO = {
     title: 'Noticias | AFAC',
     description:
-      'Toda la actualidad y los avisos del AFAC, la asociación de familias del cole.',
+      'Toda la actualidad y los avisos del AFA CV, la asociación de familias del Colegio Vizcaya.',
     image: `${SITE_URL}/og-card.png`,
   }
 

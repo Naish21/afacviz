@@ -2,6 +2,14 @@
 
 import Link from 'next/link'
 import { Icon } from './Icon'
+import {
+  FORM_SOCIOS,
+  EMAIL,
+  TELEFONO,
+  TELEFONO_TEL,
+  DIRECCION,
+  CP_CIUDAD,
+} from './contacto'
 
 const SECCIONES = [
   { href: '/blog', label: 'Noticias' },
@@ -23,19 +31,22 @@ export default function Footer() {
               A
               <span className="absolute -right-1 -top-1 size-3 rounded-full bg-sun border-2 border-brand-dark" />
             </span>
-            <span className="font-display font-extrabold text-xl">AFAC</span>
+            <span className="font-display font-extrabold text-xl">AFA CV</span>
           </div>
           <p className="mt-4 text-white/80 text-[0.95rem] leading-relaxed">
-            Asociación de Familias del Alumnado del CEIP [Nombre del Colegio].
-            Colaboramos con el cole para mejorar el día a día de nuestras hijas e
-            hijos.
+            Asociación de Familias de Alumnos del Colegio Vizcaya. Somos el nexo
+            de unión entre las familias y el equipo directivo, y colaboramos con
+            el centro por la educación, la salud y el bienestar de nuestros hijos
+            e hijas.
           </p>
-          <Link
-            href="/resources"
+          <a
+            href={FORM_SOCIOS}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn bg-sun text-ink hover:bg-white mt-6"
           >
             Hazte socio/a
-          </Link>
+          </a>
         </div>
 
         <div>
@@ -62,23 +73,47 @@ export default function Footer() {
           </h3>
           <ul className="mt-4 flex flex-col gap-2.5 text-white/85">
             <li>
-              <Link href="/contact" className="hover:text-white hover:underline underline-offset-4">
+              <a
+                href={`mailto:${EMAIL}`}
+                className="hover:text-white hover:underline underline-offset-4"
+              >
+                {EMAIL}
+              </a>
+            </li>
+            <li>
+              <a
+                href={`tel:${TELEFONO_TEL}`}
+                className="hover:text-white hover:underline underline-offset-4"
+              >
+                {TELEFONO}
+              </a>
+            </li>
+            <li className="text-white/70 text-sm leading-snug">
+              {DIRECCION}
+              <br />
+              {CP_CIUDAD}
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="hover:text-white hover:underline underline-offset-4"
+              >
                 Escríbenos
               </Link>
             </li>
-            <li>afac@tucolegio.es</li>
-            <li>Local del AFAC · entrada principal</li>
-            <li className="text-white/60 text-sm">Martes y jueves, mañanas</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-white/15">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between text-xs text-white/70">
-          <p>AFAC · Asociación de Familias del Alumnado &copy; {year}</p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4 text-xs text-white/70">
+          <p>
+            AFA CV · Asociación de Familias de Alumnos del Colegio Vizcaya
+            &copy; {year}
+          </p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-2 hover:text-white"
+            className="flex items-center gap-2 hover:text-white shrink-0"
           >
             <span>Subir</span>
             <Icon name="up" className="size-4" />

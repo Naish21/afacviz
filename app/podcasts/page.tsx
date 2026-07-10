@@ -14,7 +14,7 @@ export function generateMetadata(): Metadata {
   const SEO = {
     title: `Eventos | ${SITE_NAME}`,
     description:
-      'Agenda del AFAC: fiestas, salidas y citas importantes del curso escolar.',
+      'Agenda del AFA CV: charlas, asambleas y citas importantes del curso.',
   }
 
   return {

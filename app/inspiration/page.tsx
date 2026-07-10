@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
   const SEO = {
     title: `Actividades | ${SITE_NAME}`,
     description:
-      'Actividades extraescolares del AFAC: deporte, idiomas, música, robótica, teatro y mucho más.',
+      'Actividades y propuestas del AFA CV surgidas de las ideas de las familias del Colegio Vizcaya.',
   }
 
   return {

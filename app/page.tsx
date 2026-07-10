@@ -23,6 +23,7 @@ import { Metadata } from 'next'
 import { Icon } from '../components/Icon'
 import { cat, CatKey } from '../components/categories'
 import { AUTHOR_NAME, SITE_NAME, SITE_URL } from '../config'
+import { FORM_SOCIOS } from '../components/contacto'
 
 const home = allPages.find((home) => home?.slug === 'home')
 
@@ -124,7 +125,7 @@ export default function Home() {
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 pt-14 pb-16 sm:pt-20 sm:pb-20">
           <span className="inline-flex items-center gap-2 rounded-full bg-white border border-line px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-dark shadow-sm">
             <span className="size-2 rounded-full bg-coral" />
-            AMPA del CEIP [Nombre del Colegio]
+Asociación de Familias · Colegio Vizcaya
           </span>
 
           <h1 className="mt-5 max-w-3xl font-display font-extrabold text-ink text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">
@@ -138,11 +139,16 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/resources" className="btn btn-primary">
-              Hazte socio/a
-            </Link>
-            <Link href="/inspiration" className="btn btn-secondary">
-              Ver actividades
+            <a
+              href={FORM_SOCIOS}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Hazte socio/a · 10 € al año
+            </a>
+            <Link href="/tools" className="btn btn-secondary">
+              Qué hacemos
             </Link>
           </div>
 
@@ -222,11 +228,12 @@ export default function Home() {
           <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
             <div className="max-w-xl">
               <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-white">
-                Con una sola tarde al trimestre, ya ayudas
+                Cuantos más seamos, más podremos hacer
               </h2>
               <p className="mt-2 text-white/85">
-                Asóciate al AFAC y participa en las comisiones. Cuantas más
-                familias, más cosas podemos hacer por el cole.
+                Asociarse cuesta 10 € al año por familia. Con esa cuota
+                sostenemos las actividades, la formación y la representación de
+                las familias ante el colegio.
               </p>
             </div>
             <Link

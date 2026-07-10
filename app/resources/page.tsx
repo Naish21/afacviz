@@ -14,7 +14,7 @@ export function generateMetadata(): Metadata {
   const SEO = {
     title: `Documentos | ${SITE_NAME}`,
     description:
-      'Documentos del AFAC: estatutos, actas, circulares y hojas de inscripción.',
+      'Documentos del AFA CV: estatutos, formulario de socios, tríptico y material informativo.',
   }
 
   return {

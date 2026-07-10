@@ -1,34 +1,41 @@
 # ===========================================================================
-#  Panel de administración del AFAC (Decap CMS)
+#  Panel de administración del AFA CV (Decap CMS)
 #  Accede en:  https://afacviz.com/admin/
-# ===========================================================================
 #
-#  AUTENTICACIÓN (cómo se inicia sesión para editar la web)
-#  ---------------------------------------------------------------------------
-#  Por defecto se usa "git-gateway" + Netlify Identity. OJO: Netlify Identity
-#  y Git Gateway están DEPRECADOS y es posible que en un sitio nuevo no puedas
-#  activarlos. Si es tu caso, usa DecapBridge (gratuito) descomentando el
-#  bloque de más abajo. Tienes el paso a paso en SETUP-AMPA.md.
-# ---------------------------------------------------------------------------
+#  Autenticación: DecapBridge con PKCE.
+#  Las personas de la junta entran con email y contraseña, sin necesitar
+#  cuenta de GitHub. Se invitan desde el panel de https://decapbridge.com
+# ===========================================================================
 
-# --- OPCIÓN A: Netlify Identity + Git Gateway (legado) ---
 backend:
   name: git-gateway
+  repo: Naish21/afacviz
   branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/7316f932-a258-4177-8ba7-180aef5f0dc3/pkce
+  auth_token_endpoint: /sites/7316f932-a258-4177-8ba7-180aef5f0dc3/token
+  gateway_url: https://gateway.decapbridge.com
+  # Registra quién hizo cada cambio en el historial de GitHub
+  commit_messages:
+    create: 'Crear {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> vía DecapBridge'
+    update: 'Actualizar {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> vía DecapBridge'
+    delete: 'Borrar {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> vía DecapBridge'
+    uploadMedia: 'Subir "{{path}}" - {{author-name}} <{{author-login}}> vía DecapBridge'
+    deleteMedia: 'Borrar "{{path}}" - {{author-name}} <{{author-login}}> vía DecapBridge'
+    openAuthoring: 'Mensaje {{message}} - {{author-name}} <{{author-login}}> vía DecapBridge'
 
-# --- OPCIÓN B: DecapBridge (recomendado si no puedes usar Identity) ---
-# Regístrate gratis en https://decapbridge.com, conecta este repositorio y
-# pega los valores que te dé. Luego comenta el bloque de la OPCIÓN A y
-# descomenta este:
-#
-# backend:
-#   name: git-gateway
-#   repo: Naish21/afacviz
-#   branch: main
-#   identity_url: https://auth.decapbridge.com/sites/TU-SITE-ID
-#   gateway_url: https://gateway.decapbridge.com
+# Campos de usuario que aporta DecapBridge
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
 
-# Para probar en tu ordenador en local: descomenta y ejecuta `npx decap-server`.
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://afacviz.com
+
+# Para probar en tu ordenador: descomenta y ejecuta `npx decap-server`
 # local_backend: true
 
 # Flujo borrador -> revisión -> publicado (si varias personas editan):
@@ -56,7 +63,7 @@ collections:
           - { label: 'Descripción', name: 'description', widget: 'text' }
 
       - file: 'content/page/about.md'
-        label: 'Sobre el AFAC'
+        label: 'Quiénes somos'
         name: 'about'
         fields:
           - { label: 'Título', name: 'title', widget: 'string' }

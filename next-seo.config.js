@@ -3,6 +3,6 @@ export default {
     type: 'website',
     locale: 'en',
     url: 'https://afacviz.com',
-    site_name: 'AFAC',
+    site_name: 'AFA CV',
   },
 };
