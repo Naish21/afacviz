@@ -1,10 +1,12 @@
 ---
 title: Contacto
 description: >-
-  Estamos aquí para escucharos, apoyaros y trabajar juntos por el bienestar de nuestros hijos e hijas. Si tenéis cualquier duda, sugerencia o propuesta, no dudéis en poneros en contacto con nosotros.
+  Estamos aquí para escucharos, apoyaros y trabajar juntos por el bienestar de
+  nuestros hijos e hijas. Si tenéis cualquier duda, sugerencia o propuesta, no
+  dudéis en poneros en contacto con nosotros.
 
 
-  **Correo electrónico:** afacviz@gmail.com
+  **Correo electrónico:** mailto:afacviz@gmail.com
 
 
   **Teléfono:** 667 804 934
