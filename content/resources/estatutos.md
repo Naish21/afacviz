@@ -12,9 +12,6 @@ tags:
   - normativa
 date: 2026-06-01T09:00:00.000Z
 ---
-
 ## Estatutos
 
-Los estatutos recogen los fines de la asociación, su funcionamiento y los derechos y deberes de las familias socias.
-
-*Sustituye este enlace por el PDF de los estatutos desde el panel de administración.*
+Los [estatutos](/media/estatutos-afa-cv.pdf) recogen los fines de la asociación, su funcionamiento y los derechos y deberes de las familias socias.
