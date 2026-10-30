@@ -1,15 +1,15 @@
 ---
 templateKey: podcasts
 title: Asamblea General de familias socias
-date: 2027-03-18T18:00:00.000Z
-featured: true
-description: >
+featured: false
+description: |
   Presentamos las cuentas, el balance del curso y elegimos la junta directiva.
-link: "/contact/"
+link: /contact/
+image: /media/podcast__placeholder-post-1200x1200.png
 tags:
   - asamblea
   - asociación
-image: /media/podcast__placeholder-post-1200x1200.png
+date: 2027-03-18T18:00:00.000Z
 ---
 
 ## Asamblea General
