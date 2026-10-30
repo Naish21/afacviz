@@ -1,15 +1,16 @@
 ---
 templateKey: tools
 title: Formación para familias
-date: 2026-06-05T09:00:00.000Z
 featured: true
 description: >
-  Charlas y talleres sobre salud digital, protección de datos, inteligencia artificial y crianza.
-link: "/podcasts/"
+  Charlas y talleres sobre salud digital, protección de datos, inteligencia
+  artificial y crianza.
+image: /media/gemini_generated_image_egqzh1egqzh1egqz.jpg
+link: /podcasts/
 tags:
   - formación
   - charlas
-image: /media/tools__placeholder-post-1200x1200.png
+date: 2026-06-05T09:00:00.000Z
 ---
 
 ## Formación para familias
