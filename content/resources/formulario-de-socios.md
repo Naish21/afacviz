@@ -12,9 +12,8 @@ tags:
   - inscripción
 date: 2026-06-01T09:00:00.000Z
 ---
-
 ## Formulario de inscripción
 
-Para asociarte al AFA CV, rellena el [formulario de inscripción](https://forms.gle/nss71mx4cWWX5apxxV9) y realiza una **transferencia anual de 10 € por familia**.
+Para asociarte al AFA CV, rellena el [formulario de inscripción](https://drive.google.com/file/d/1o9wzaAk74uSq_aK1fVM3Tb_UHIikLCTT/view?usp=sharing) y realiza una **transferencia anual de 10 € por familia**.
 
 Indica en el ingreso el **nombre, apellido y curso** del niño o la niña para que podamos tener constancia.
