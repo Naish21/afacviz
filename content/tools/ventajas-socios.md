@@ -1,15 +1,16 @@
 ---
 templateKey: tools
 title: Ventajas de ser familia socia
-date: 2026-06-05T09:00:00.000Z
 featured: true
 description: >
-  Por 10 € al año: información, formación, participación en las decisiones y apoyo mutuo.
-link: "https://forms.gle/nss71mx4cWWX5apxxV9"
+  Por 10 € al año: información, formación, participación en las decisiones y
+  apoyo mutuo.
+image: /media/gemini_generated_image_wnn41swnn41swnn4.jpg
+link: https://forms.gle/nss71mx4cWWX5apxxV9
 tags:
   - socios
   - cuota
-image: /media/tools__placeholder-post-1200x1200.png
+date: 2026-06-05T09:00:00.000Z
 ---
 
 ## Ventajas de ser familia socia
