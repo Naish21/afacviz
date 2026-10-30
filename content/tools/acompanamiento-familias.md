@@ -1,15 +1,16 @@
 ---
 templateKey: tools
 title: Acompañamiento y sugerencias
-date: 2026-06-05T09:00:00.000Z
 featured: true
 description: >
-  Te ayudamos a informarte, a resolver dudas y a canalizar propuestas de mejora hacia el centro.
-link: "/contact/"
+  Te ayudamos a informarte, a resolver dudas y a canalizar propuestas de mejora
+  hacia el centro.
+image: /media/gemini_generated_image_oys28ioys28ioys2.jpg
+link: /contact/
 tags:
   - acompañamiento
   - sugerencias
-image: /media/tools__placeholder-post-1200x1200.png
+date: 2026-06-05T09:00:00.000Z
 ---
 
 ## Acompañamiento y sugerencias
