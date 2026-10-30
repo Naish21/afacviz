@@ -1,15 +1,16 @@
 ---
 templateKey: resources
 title: Formulario de inscripción de socios
-date: 2026-06-01T09:00:00.000Z
 featured: true
 description: >
-  Hazte familia socia del AFA CV por 10 € al año. Rellena el formulario y realiza la transferencia.
-link: "https://forms.gle/nss71mx4cWWX5apxxV9"
+  Hazte familia socia del AFA CV por 10 € al año. Rellena el formulario y
+  realiza la transferencia.
+image: /media/resource__placeholder-post-1200x1200.png
+link: /media/formulario-inscripcion-socios-afa-colegio-vizcaya.pdf
 tags:
   - socios
   - inscripción
-image: /media/resource__placeholder-post-1200x1200.png
+date: 2026-06-01T09:00:00.000Z
 ---
 
 ## Formulario de inscripción
