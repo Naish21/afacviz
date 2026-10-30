@@ -1,15 +1,16 @@
 ---
 templateKey: podcasts
 title: "Charla: salud digital en casa y en el cole"
-date: 2026-10-15T17:30:00.000Z
-featured: true
+featured: false
 description: >
-  Cómo acompañar el uso de pantallas en casa y qué dicen las recomendaciones médicas.
-link: "/contact/"
+  Cómo acompañar el uso de pantallas en casa y qué dicen las recomendaciones
+  médicas.
+link: /contact/
+image: /media/podcast__placeholder-post-1200x1200.png
 tags:
   - charla
   - digitalización
-image: /media/podcast__placeholder-post-1200x1200.png
+date: 2026-10-15T17:30:00.000Z
 ---
 
 ## Salud digital en casa y en el cole
