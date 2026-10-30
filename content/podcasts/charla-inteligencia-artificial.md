@@ -1,15 +1,15 @@
 ---
 templateKey: podcasts
 title: "Charla: inteligencia artificial en la escuela"
-date: 2027-01-21T17:30:00.000Z
-featured: true
-description: >
+featured: false
+description: |
   Qué es la IA, qué usos tiene en el aula y qué límites conviene acordar.
-link: "/contact/"
+link: /contact/
+image: /media/podcast__placeholder-post-1200x1200.png
 tags:
   - charla
   - inteligencia artificial
-image: /media/podcast__placeholder-post-1200x1200.png
+date: 2027-01-21T17:30:00.000Z
 ---
 
 ## Inteligencia artificial en la escuela
