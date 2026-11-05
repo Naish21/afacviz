@@ -1,15 +1,16 @@
 ---
 templateKey: tools
 title: Representación ante el colegio
-date: 2026-06-05T09:00:00.000Z
 featured: true
 description: >
-  Somos el nexo de unión entre las familias y el equipo directivo del Colegio Vizcaya.
-link: "/contact/"
+  Somos el nexo de unión entre las familias y el equipo directivo del Colegio
+  Vizcaya.
+image: /media/gemini_generated_image_5jb4205jb4205jb4.jpg
+link: /contact/
 tags:
   - representación
   - diálogo
-image: /media/tools__placeholder-post-1200x1200.png
+date: 2026-06-05T09:00:00.000Z
 ---
 
 ## Representación ante el colegio
