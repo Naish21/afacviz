@@ -5,7 +5,7 @@ featured: true
 description: >
   Somos el nexo de unión entre las familias y el equipo directivo del Colegio
   Vizcaya.
-image: /media/gemini_generated_image_5jb4205jb4205jb4.jpg
+image: /media/repre2.jpg
 link: /contact/
 tags:
   - representación
