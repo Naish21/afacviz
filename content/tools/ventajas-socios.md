@@ -5,7 +5,7 @@ featured: true
 description: >
   Por 10 € al año: información, formación, participación en las decisiones y
   apoyo mutuo.
-image: /media/ventajas-1-.jpg
+image: /media/ventajas.jpg
 link: https://forms.gle/nss71mx4cWWX5apxxV9
 tags:
   - socios
