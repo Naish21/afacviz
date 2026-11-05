@@ -5,7 +5,7 @@ featured: true
 description: >
   Hazte familia socia del AFA CV por 10 € al año. Rellena el formulario y
   realiza la transferencia.
-image: /media/resource__placeholder-post-1200x1200.png
+image: /media/gemini_generated_image_wnn41swnn41swnn4.jpg
 link: https://drive.google.com/file/d/1o9wzaAk74uSq_aK1fVM3Tb_UHIikLCTT/view?usp=sharing
 tags:
   - socios
