@@ -27,7 +27,7 @@ Estamos aquí para escucharos, apoyaros y trabajar juntos por el bienestar de nu
 
 ## Cómo asociarse
 
-Todas aquellas familias que queráis haceros socias podéis hacerlo rellenando el [formulario de inscripción](https://forms.gle/nss71mx4cWWX5apxxV9) y realizando una transferencia anual de **10 € por familia**. Por favor, enviadnos el formulario relleno para tener constancia. Es importante indicar en el ingreso el **nombre, apellido y curso** del niño o la niña.
+Todas aquellas familias que queráis haceros socias podéis hacerlo rellenando el [formulario de inscripción](https://afacviz.com/media/form_socios.pdf) y realizando una transferencia anual de **10 € por familia**. Por favor, enviadnos el formulario relleno para tener constancia. Es importante indicar en el ingreso el **nombre, apellido y curso** del niño o la niña.
 
 La asociación necesita vuestro apoyo y colaboración para poder funcionar. Es importante implicarse para mejorar el colegio de nuestros hijos e hijas. ¡Animaos!
 

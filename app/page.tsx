@@ -237,7 +237,7 @@ Asociación de Familias · Colegio Vizcaya
               </p>
             </div>
             <Link
-              href="/contact"
+              href="https://afacviz.com/media/form_socios.pdf"
               className="btn bg-sun text-ink hover:bg-white shrink-0"
             >
               Quiero colaborar

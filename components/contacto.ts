@@ -1,5 +1,5 @@
 // Datos de contacto reales del AFA CV. Editables desde aquí.
-export const FORM_SOCIOS = 'https://forms.gle/nss71mx4cWWX5apxxV9'
+export const FORM_SOCIOS = 'https://afacviz.com/media/form_socios.pdf'
 export const EMAIL = 'afacviz@gmail.com'
 export const TELEFONO = '667 804 934'
 export const TELEFONO_TEL = '+34667804934'

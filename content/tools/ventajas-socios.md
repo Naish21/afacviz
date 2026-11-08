@@ -6,7 +6,7 @@ description: >
   Por 10 € al año: información, formación, participación en las decisiones y
   apoyo mutuo.
 image: /media/ventajas.jpg
-link: https://forms.gle/nss71mx4cWWX5apxxV9
+link: https://afacviz.com/media/form_socios.pdf
 tags:
   - socios
   - cuota
@@ -24,4 +24,4 @@ La cuota es de **10 € al año por familia**. Asociarse permite:
 - **Apoyo mutuo**: cada vez somos más familias coordinadas.
 - Acceso a **descuentos y recursos** movilizados colectivamente.
 
-[Rellena el formulario de inscripción](https://forms.gle/nss71mx4cWWX5apxxV9) y realiza la transferencia anual indicando nombre, apellido y curso.
+[Rellena el formulario de inscripción](https://afacviz.com/media/form_socios.pdf) y realiza la transferencia anual indicando nombre, apellido y curso.
